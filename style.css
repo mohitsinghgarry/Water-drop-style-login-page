@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* border: 2px solid red; */
+    min-height: 100vh;
+    font-weight: bold;
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.container .drop {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 350px;
+    width: 350px;
+    box-shadow: 20px 20px 39px rgb(0 0 0 / 9%) inset, 16px 16px 20px rgb(0 0 0 / 13%);
+    transition: 0.5s;
+    border-radius: 55% 45% 31% 69% / 69% 43% 57% 31%;
+}
+
+.container .drop:hover {
+    border-radius: 50%;
+
+}
+
+.container .drop .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+
+}
+
+.container .drop .content h2 {
+    position: relative;
+    font-size: 1.7em;
+    color: #333;
+}
+
+.container .drop .content form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .drop .content form .inputbox {
+    position: relative;
+    box-shadow: 20px 20px 39px rgb(0 0 0 / 9%) inset, 16px 16px 20px rgb(0 0 0 / 13%);
+
+}
+
+.container .drop .content form .inputbox {
+    position: relative;
+    border-radius: 5em;
+    padding: 5px
+}
+
+.container .drop .content form .inputbox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 5em;
+    padding: 5px;
+    font-size: large;
+    width: 240px;
+}
+
+::placeholder {
+    font-size: large;
+}
+
+.container .drop .content form .inputbox input[type="submit"] {
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    width: 150px;
+}
+
+.container .drop .content form .inputbox:last-child {
+    background-color: #ff0f5b;
+    width: 150px;
+    box-shadow: 20px 20px 39px rgba(247, 0, 0, 0.258) inset, 16px 16px 20px rgba(233, 0, 0, 0.258);
+    transition: 0.7s;
+
+
+}
+
+.container .drop .content form .inputbox:last-child:hover {
+    width: 80%;
+}
+
+.btns {
+    position: absolute;
+    bottom: 0px;
+    right: -150px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    background-color: #c61dff;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 10px 10px 10px rgb(190 1 254 / 5%),
+        25px 35px 20px rgb(190 1 254 / 10%), 26px 30px 20px rgb(190 1 254 / 10%),
+        inset -20px -20px 25px rgb(255 255 255 / 50%);
+    font-size: 1em;
+    border-radius: 30% 70% 70% 30% / 48% 42% 58% 52%;
+    transition: 0.5s;
+
+}
+
+.btns:hover {
+    border-radius: 50%;
+}
+
+#btn {
+    position: absolute;
+    right: -200px;
+    bottom: 160px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: #014bff;
+    box-shadow: inset 10px 10px 10px rgb(1 180 255 / 5%),
+        25px 35px 20px rgb(1 180 255 / 10%), 26px 30px 20px rgb(1 180 255 / 10%),
+        inset -20px -20px 25px rgb(255 255 255 / 50%);
+}
